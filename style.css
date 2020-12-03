@@ -420,7 +420,7 @@ section:nth-of-type(4) > .right > .double-img{
     }
 
     section:nth-of-type(1){
-        padding-top: 180px;
+        padding-top: 170px;
     }
 
     section:nth-of-type(1) > .right {
@@ -437,8 +437,10 @@ section:nth-of-type(4) > .right > .double-img{
     }
 
     section:nth-of-type(4){
-        padding-bottom: 120px;
+        padding-bottom: 80px;
     }
+
+    
 
     section > div > img{
         display: block;
@@ -607,6 +609,11 @@ section:nth-of-type(4) > .right > .double-img{
     .ac > h3 > button{
         
         font-size: 1.4rem!important;
+    }
+
+    .comeon{
+        box-sizing: border-box;
+        padding: 0 20px;
     }
 }
 
