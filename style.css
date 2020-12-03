@@ -1,6 +1,6 @@
 :root{
     --header-size: 3.1rem;
-    --text-size: 1.3rem;
+    --text-size: 1.1rem;
     --nav-size: 1.5rem;
     --shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.2);
     --shadow-hover: inset -6px -6px 10px rgba(39, 132, 251, 1), inset 6px 6px 20px rgba(0, 0, 0, 0.1);
@@ -27,6 +27,18 @@
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
+}
+
+.big-btn{
+    min-width: 230px;
+    padding: 12px 0;
+    font-size: 1.3rem;
+}
+
+.xbig-btn{
+    min-width: 270px;
+    padding: 10px 0;
+    font-size: 1.3rem;
 }
 
 body{
@@ -82,6 +94,13 @@ body{
 
 .links > a{
     cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+.links > a:hover{
+    opacity: 1;
+    transform: scale(1.05)
 }
 
 section{
@@ -314,7 +333,7 @@ section:nth-of-type(4) > .right > .double-img{
     outline: none;
     color: #2B0CAB!important;
     font: inherit!important;
-    font-size: 1.7rem!important;
+    font-size: 1.2rem!important;
 }
 
 .ac-text{
@@ -334,6 +353,14 @@ section:nth-of-type(4) > .right > .double-img{
     grid-template-columns: repeat(3, 33%);
     align-items: center;
     justify-items: center;
+}
+
+.no-mobile{
+    display: block;
+}
+
+.mobile{
+    display: none;
 }
 
 @media(max-width: 1200px){
@@ -359,6 +386,14 @@ section:nth-of-type(4) > .right > .double-img{
 
     html{
         font-size: 14px;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .no-mobile{
+        display: none;
     }
 
     .container{
@@ -409,6 +444,11 @@ section:nth-of-type(4) > .right > .double-img{
     .double-img > *{
         display: block;
         margin: 0 auto;
+    }
+
+
+    .links > a{
+        opacity: 1;
     }
 
     .contact{

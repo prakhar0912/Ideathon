@@ -18,12 +18,12 @@
                 <img src="./assets/dsclogo.png" alt="">
             </div>
             <div class="links">
-                <a>Home</a>
-                <a>DevTalks</a>
-                <a>AboutDSC</a>
-                <a>Timeline</a>
-                <a>Sponsors</a>
-                <a>Contact Us</a>
+                <a onclick="document.querySelectorAll('section')[0].scrollIntoView({behavior: 'smooth', block: 'start',}); ham.click()">Home</a>
+                <a onclick="document.querySelectorAll('section')[2].scrollIntoView({behavior: 'smooth', block: 'start',}); ham.click()">DevTalks</a>
+                <a onclick="document.querySelectorAll('section')[3].scrollIntoView({behavior: 'smooth', block: 'start',}); ham.click()">AboutDSC</a>
+                <a onclick="document.querySelectorAll('.section')[0].scrollIntoView({behavior: 'smooth', block: 'start',}); ham.click()">Timeline</a>
+                <a onclick="document.querySelectorAll('.section')[1].scrollIntoView({behavior: 'smooth', block: 'start',}); ham.click()">Sponsors</a>
+                <a onclick="document.querySelectorAll('.section')[2].scrollIntoView({behavior: 'smooth', block: 'start',}); ham.click()">Contact Us</a>
             </div>
             <div class="ham">
                 <p class="dot"></p>
@@ -36,12 +36,13 @@
             <div class="left">
                 <img src="./assets/ideathon.png" alt="">
                 <h2>Springboard for your Ideas.</h2>
-                <button class="main-btn">Get Updates</button>
+                <button class="main-btn big-btn">Get Updates</button>
             </div>
             <div class="right">
                 <img src="./assets/desk.png" alt="">
             </div>
         </section>
+
         <section>
             <div class="left">
                 <h2><span>About</span> Idea<span>thon</span></h2>
@@ -61,6 +62,7 @@
                 <img src="./assets/lady.png" alt="">
             </div>
         </section>
+
         <section>
             <div class="left">
                 <h2><span>Devtalks</span></h2>
@@ -80,6 +82,7 @@
                 <img src="./assets/devtalks.png" alt="">
             </div>
         </section>
+
         <section>
             <div class="left">
                 <h2><span>About DSC</span></h2>
@@ -107,7 +110,8 @@
         </section>
         <div class="section">
             <h2><span>Timeline</span></h2>
-            <img src="./assets/Timeline.png" alt="">
+            <img src="./assets/Timeline.png" alt="" class="no-mobile">
+            <img src="./assets/Mobile_Timeline.png" alt="" class="mobile">
             <button class="main-btn">Download PDF</button>
         </div>
         <div class="section">
@@ -262,7 +266,7 @@
                     <img src="./assets/question.png" alt="">
                 </div>
             </div>
-            <button class="main-btn">Download Brochure</button>
+            <button class="main-btn xbig-btn">Download Brochure</button>
 
             <div class="coc">
                 <p>Code of Conduct</p>
